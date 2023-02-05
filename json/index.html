@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas DummyJSON</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="js/jquery.js" defer></script>
+    <script src="js/ajax.js" defer></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="m-4">Tugas DummyJSON</h1>
+        <div class="m-4">
+            <button class="btn btn-primary" id="get">GET</button>
+            <button class="btn btn-secondary" id="show">SHOW</button>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" id="post">POST</button>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table id="table" class="table table-striped-columns">
+                    <tbody id="tbody">
+                    </tbody>
+                </table>            
+            </div>
+            <div class="col">
+                    <div id="isi"></div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Input Data</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form">
+                        <input type="number" name="" hidden id="id">
+
+                        <label class="form-label mt-4" for="">Title</label>
+                        <input class="form-control" type="text" name="" id="title">
+                        
+                        <label class="form-label mt-4" for="">Description</label>
+                        <input class="form-control" type="text" name="" id="des">
+                        
+                        <label for="" class="mt-4">Select Category</label>
+                        <select class="form-select" name="" id="cat">
+                        </select>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="save">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
